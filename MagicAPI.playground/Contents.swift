@@ -13,7 +13,7 @@ func getData(urlRequest: String) {
         if let error {
             print("Ошибка: \(error.localizedDescription)")
         } else if let response = response as? HTTPURLResponse, response.statusCode == 200 {
-            print("Код ответа от сервера: \(response)")
+            print("Код ответа от сервера: \(response.statusCode)")
         } else {
             print("Не получили ответ от сервера")
         }

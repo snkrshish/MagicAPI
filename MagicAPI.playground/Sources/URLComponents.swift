@@ -1,6 +1,6 @@
 import Foundation
 
-public func createURL (card: String) -> URL? {
+public func createURL(card: String) -> URL? {
     var urlComponents = URLComponents()
     urlComponents.scheme = "https"
     urlComponents.host = "api.magicthegathering.io"
@@ -9,4 +9,3 @@ public func createURL (card: String) -> URL? {
 
     return urlComponents.url
 }
-

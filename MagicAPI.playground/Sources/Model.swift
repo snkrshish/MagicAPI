@@ -1,8 +1,13 @@
+struct Card: Codable {
+    let cards : [CardElement]
+}
 
-struct MagicCard: Decodable {
+
+struct CardElement: Codable {
     let name: String
-    let manaCost: Int?
-    let type: String
-    let imageUrl: String
-    let originalText: String?
+    let manaCost: String?
+    let rarity: String
+    let setName: String
+    let text: String
+    let artist: String
 }
